@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/88bddd6d00.js" crossorigin="anonymous"></script>
+        <title>Welcome! </title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Bradley Haley</h1>
+            <nav class="head-nav">
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="about">
+                <img src="./img/DSC_5210.JPG" alt="Bradley Haley">
+                    <article>
+                        <h2>About me</h2>
+                        <p>
+                            Up and coming software developer hoping to make an impact on education, open data and design. 
+                            An avid learner that can quickly grasp new languages, frameworks, 
+                            and concepts and thrives when challenged to be creative and use complex problem solving skills. 
+                            Motivated to build applications that improve everyday life for others.
+                        </p>
+                    </article>
+            </section>
+
+            <section id="projects">
+                <article>
+                    <img src='./img//MathMakerClient.png' alt='Picture of the home screen'></img>
+                    <h3>Math Maker</h3>
+                    <p>
+                        Math maker is an organizational tool for students with various disabilities to help write down and solve math problems. 
+                        It uses a drag and drop style grid system with the ability to take pictures and save a current problem if needed. 
+                        The biggest challenge for me was managing grid data and keeping the design simple. 
+                        You can come check out the app here!
+                    </p>
+                </article>
+
+                <article>
+                    <img src='' alt='Picture of the home screen'></img>
+                    <h3>Math Maker Server Side</h3>
+                    <p>
+                        This was my first time implementing authentications with validations in Node.js using express. 
+                        The third party libraries used are bcrypt and jwt to hash passwords and create tokens. 
+                        Each user must have a unique username and the user features on the client side are only available given a valid token. 
+                        This server features all CRUD functionality with knex SQL queries. 
+                    </p>
+                </article>
+
+                <article>
+                    <img src='' alt='Asteroids Game!'></img>
+                    <h3>Asteriods!</h3>
+                    <p>
+                        This is my take on the classic Asteriods Game! 
+                        It was built using vanilla JavaScript in the front and node with express in the back. 
+                        Only scoreds that have been apart of the top ten best scores at any time are saved to see how people progress over time. 
+                        Play it <a href="https://brads-asteroid-game.web.app/">here</a>!
+                    </p>
+                </article>
+
+            </section>
+        </main>
+
+        <footer>
+            <h3>Contact Me</h3>
+
+            <nav class='footnav'>
+                <a href="https://github.com/bshaley25">
+                    <i class="fab fa-github-alt"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/bradley-haley-44a85b19a/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a> 
+
+                <a>
+                    <i className="fas fa-paper-plane"></i>
+                </a>
+            </nav>
+        </footer>
+
+    </body>
+</html>
