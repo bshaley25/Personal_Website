@@ -63,19 +63,30 @@ header {
     background-color: #7e91b4;
 }
 
-h1 {
+header div {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+div h1 {
     font-size: 48px;
+}
+
+div h2 {
+    font-size: 24px;
+    text-align: start;
+    padding-left: 2px;
 }
 
 header nav {
     flex: 1;
     display: flex; 
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-a {
+nav a {
     font-size: 24px;
     color: black;
 }
@@ -91,6 +102,8 @@ main {
 .about {
     display: flex;
     justify-content: center;
+    padding-bottom: 34px;
+
 }
 
 .about img{
@@ -113,16 +126,36 @@ article h2 {
 }
 
 article p {
-    /* width: 400px; */
     font-size: 18px;
     letter-spacing: .5px;
 }
 
 /* Projects */
 
+main > h2 {
+    font-size: 36px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    text-align: center;
+    border-style: solid;
+}
+
+#projects {
+    display: flex;
+}
+
+#projects article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+
 #projects img {
     width: 300px;
 }
+
+
 
 
 /* Media Queries */
@@ -134,6 +167,14 @@ article p {
     header {
       flex-direction: column;
       justify-content: space-between;
+    }
+
+    header div {
+        align-items: center;
+    }
+
+    div h2 {
+        font-size: 20px;
     }
 
     header nav {
@@ -153,8 +194,8 @@ article p {
         padding-bottom: 16px;
     }
     
-    .about article {
-        align-items: baseline;
+    .about h2 {
+
     }
 
     article p {
@@ -167,6 +208,11 @@ article p {
 @media (max-width: 480px) {
 
     /* Header  */ 
+
+    header div {
+        text-align: center;
+    }
+
     header h1 {
         font-size: 34px;
     } 
@@ -174,6 +220,21 @@ article p {
     header a {
         font-size: 16px;
     } 
+
+    /* ABOUT */
+
+    .about article {
+        width: inherit;
+    }
+
+    article h2 {
+        font-size: 24px;
+    }
+    
+    article p {
+        font-size: 16px;
+    }
+
 
 
 }
