@@ -91,7 +91,7 @@ nav a {
     color: black;
 }
 
-/* MAIN  (ABOUT AND PROJECT ARE IN HERE)  */
+/* MAIN  (ABOUT, PROJECT AND RESUME ARE IN HERE)  */
 
 main {
     padding: 16px;
@@ -123,6 +123,7 @@ article h2 {
     font-size: 36px;
     font-weight: 500;
     padding-bottom: 8px;
+    text-decoration: underline;
 }
 
 article p {
@@ -135,9 +136,10 @@ article p {
 main > h2 {
     font-size: 36px;
     font-weight: 500;
+    padding-top: 16px;
     padding-bottom: 8px;
     text-align: center;
-    border-style: solid;
+    text-decoration: underline;
 }
 
 #projects {
@@ -179,6 +181,19 @@ main > h2 {
 #projects img {
     width: 400px;
 }
+
+/* Resume */
+#resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resume > img {
+    width: 720px;
+    padding-bottom: 8px;
+}
+
 
 footer {
     display: flex;
@@ -251,6 +266,9 @@ footer a {
         flex-direction: column-reverse;
     }
 
+    #resume > img {
+        width: 450px;
+    }
 }
 
 /* Phones */
