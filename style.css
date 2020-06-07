@@ -154,7 +154,6 @@ main > h2 {
     justify-content: end;
     align-items: center;
     padding: 8px;
-
 }
 
 #projects * {
@@ -197,15 +196,39 @@ main > h2 {
 
 footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    height: 96px;
     padding: 16px;
     background-color: #7e91b4;
 }
 
-footer a {
-    width: 2rem;
+footer > h2 {
+    font-size: 24px;
 }
+
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer i {
+    font-size: 40px;
+    padding: 0px 16px
+}
+
+footer > nav> a > p {
+    font-size: 12px;
+}
+
 
 
 
